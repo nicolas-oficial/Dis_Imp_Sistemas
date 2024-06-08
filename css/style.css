@@ -1,0 +1,22 @@
+body {
+    background-color: #cce396;
+}
+
+h1 {
+    color: red;
+    font-size: 45px;
+    font-weight: bold;
+    background-color: rgb(137, 244, 95);
+    text-align: center;
+    text-decoration: underline;
+}
+
+hr {
+    color:black;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}

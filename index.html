@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización de Criptomonedas</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Cotización de Criptomonedas</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="crypto-form">
+                    <div class="form-group">
+                        <label for="crypto-quantity">Inserte Cantidad de Criptomonedas:</label>
+                        <input type="number" class="form-control" id="crypto-quantity" value="1" min="0.0001" step="0.0001">
+                    </div>
+                    <div class="form-group">
+                        <label for="crypto-type">Seleccione Tipo de Criptomoneda:</label>
+                        <select class="form-control" id="crypto-type">
+                            <option value="BTC">BTC</option>
+                            <option value="ETH">ETH</option>
+                            <option value="BNB">BNB</option>
+                            <option value="ADA">ADA</option>
+                            <option value="XRP">XRP</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="currency-select">Seleccione Moneda a cotizar:</label>
+                        <select class="form-control" id="currency-select">
+                            <option value="USDT">USDT</option>
+                            <option value="BTC">BTC</option>
+                            <option value="DAI">DAI</option>
+                            <option value="EUR">EUR</option>
+                            <option value="ARS">ARS</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Obtener Cotización</button>
+                </form>
+                <hr>
+                <div class="mt-4" id="result" style="display:none;">
+                    <h4>Cotización:</h4>
+                    <p id="quote"></p>
+                </div>
+                <div class="mt-4" id="value-result" style="display:none;">
+                    <h4>Valor de la Cantidad de Criptomonedas:</h4>
+                    <p id="value"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
